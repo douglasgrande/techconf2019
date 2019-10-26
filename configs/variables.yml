@@ -1,0 +1,20 @@
+config:
+  box: "ubuntu/bionic64"
+
+mongodb01:
+  hostname: "mongodb01"
+  network: "private_network"
+  intnet: "mongocluster"
+  ip: "10.15.15.110"
+
+mongodb02:
+  hostname: "mongodb02"
+  network: "private_network"
+  intnet: "mongocluster"
+  ip: "10.15.15.120"
+
+mongodb03:
+  hostname: "mongodb03"
+  network: "private_network"
+  intnet: "mongocluster"
+  ip: "10.15.15.130"
