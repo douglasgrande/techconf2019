@@ -1,10 +1,10 @@
 #!/bin/bash -e
 
 IPMASTER=$1
-IPREPL01=$2
-IPREPL02=$3
-NAMEMASTER=$4
-NAMEREPL01=$5
+NAMEMASTER=$2
+IPREPL01=$3
+NAMEREPL01=$4
+IPREPL02=$5
 NAMEREPL02=$6
 
 sudo cat >> /etc/hosts << EOF
@@ -13,8 +13,8 @@ $IPREPL01     $NAMEREPL01
 $IPREPL02     $NAMEREPL02 
 EOF
 
-sleep 10
+sleep 5
 
-sudo systemctl start mongod
+sudo systemctl restart mongod
 
-sleep 10
+sleep 5
