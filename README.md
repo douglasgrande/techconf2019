@@ -1,4 +1,4 @@
-# techconf2019
+# Americana Techconf2019
 Repositório da palestra.
 
 Hands On - Americana Tech Conf - 2019
